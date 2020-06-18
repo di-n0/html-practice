@@ -20,7 +20,7 @@
         <h1><a href="index.html">생활코딩 복습내용</a></h1>
         <ol>
           <li><a href="1.html">처음~통계에 기반한 학습</a></li>
-          <li><a href="2.html" id="active">줄바꿈 </a></li>
+          <li><a href="2.html">줄바꿈 </a></li>
           <li><a href="3.html">html이 중요한 이유</a></li>
           <li><a href="4.html">최후의 문법 속성과 img</a></li>
           <li><a href="5.html">부모 자식과 목록</a></li>
@@ -30,17 +30,29 @@
           <li><a href="9.html">서버와 클라이언트</font></a></li>
           <li><a href="10.html">호스팅</a></li>
           <li><a href="11.html">css처음 - css의 등장</a></li>
-          <li><a href="12.html">css의 기본 문법</a></li>
+          <li><a href="12.html" id="active">css의 기본 문법</a></li>
           <li><a href="13.html">property 에 대해서</a></li>
           <li><a href="14.html">선택자(selecter)의 우선순위</a></li>
         </ol>
 
-        <h2>줄바꿈</h2>
+        <h2>css의 기본 문법</h2>
         <p style="margin-top:45px">
-          br 그냥 줄바꿈 <br>
-      P /P 단락 줄바꿈 <br>
-        br 보다 p 를 써야되는 이유는 css와 합쳐지면 더 좋기때문<br>
-        css?는 뭐지?
+          html과 css는 언어가 다르므로 어디서부터 어디까지 css인지 인식시켜줘야된다.  <br>
+          첫번째로 ＜style> ＜/style> 이란 태그이다. 두번째는 style 속성을 쓰는것   <br>
+
+      ＜a href="xx.html" style="color:red"><br>
+        태그 안에 style 이란 속성을 사용하게 되면 뒤에 나오는 명령어는 css 언어로 인식한다는 약속이 되어있음, 따라서 태그안 스타일 속성이 포함된 태그를 css언어로 표현할것이라는걸 말함
+        <br>
+        ＜style>
+        <p style="color:purple;">a{</p>
+        <p style="color:red;">color:<a style="color:green;">black;</a></p>
+        <p style="color:purple;"> }</p>
+        <br>  ＜/style>
+        <br>
+        <br> 반대로 ＜style>＜/style>란 태그는 css효과가 들어와도 어디에 적용된다는 코드를(보라색) 추가해줘야 작동. 보라색 코드 부분을 선택자(selector) 라고 표현하고,
+        <br>선택자에게 (괄호안) 어떻게 변하게 해라 라는걸 선언(declaration)이라 함
+        <br>괄호안에 변화를 주고싶은 항목을(빨간색) 속성(property) 이라 하고 변화될값을(녹색) value라고 한다
+        <br>효과를 지정한 후에는 ;끝맺음을 해야됨
         </p>
 
 

@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title> 웹자작 - html </title>
-      <meta charset="utf-8">
-    </head>
-        <style>
-                #active{
-                  text-decoration: underline; color: red;
-                }
-                a {
-                  color:black; text-decoration: none;
-                }
-                h1{
-                  text-align: center; font-size: 45px;
-                }
+<head>
+  <title> 웹자작 - html </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-        </style>
-    <body>
-        <h1><a href="index.html">생활코딩 복습내용</a></h1>
-        <ol>
-          <li><a href="1.html">처음~통계에 기반한 학습</a></li>
-          <li><a href="2.html">줄바꿈 </a></li>
-          <li><a href="3.html" id="active">html이 중요한 이유</a></li>
-          <li><a href="4.html">최후의 문법 속성과 img</a></li>
-          <li><a href="5.html">부모 자식과 목록</a></li>
-          <li><a href="6.html">문서의 구조와 슈퍼스타들</a></li>
-          <li><a href="7.html">html 태그의 제왕</a></li>
-          <li><a href="8.html">웹사이트 완성</a></li>
-          <li><a href="9.html">서버와 클라이언트</font></a></li>
-          <li><a href="10.html">호스팅</a></li>
-          <li><a href="11.html">css처음 - css의 등장</a></li>
-          <li><a href="12.html">css의 기본 문법</a></li>
-          <li><a href="13.html">property 에 대해서</a></li>
-          <li><a href="14.html">선택자(selecter)의 우선순위</a></li>
-        </ol>
+<body>
+    <h1><a href="index.html" id="h1">생활코딩 복습내용</a></h1>
+      <div class="grid">
+        <div class="leftside">
+          <button type="button" class="collapsible"><h2>html</h2></button>
+            <div class="html">
 
+              <ol>
+                <li><a href="1.html">처음~통계에 기반한 학습</a></li>
+                <li><a href="2.html">줄바꿈 </a></li>
+                <li><a href="3.html">html이 중요한 이유</a></li>
+                <li><a href="4.html">최후의 문법 속성과 img</a></li>
+                <li><a href="5.html">부모 자식과 목록</a></li>
+                <li><a href="6.html">문서의 구조와 슈퍼스타들</a></li>
+                <li><a href="7.html">html 태그의 제왕</a></li>
+                <li><a href="8.html">웹사이트 완성</a></li>
+                <li><a href="9.html">서버와 클라이언트</font></a></li>
+                <li><a href="10.html">호스팅</a></li>
+            </div>
+              </ol>
 
-        <h2>html이 중요한 이유</h2>
-        <p style="margin-top:45px">
-          검색앤진 기준으로<br>
-        검색할때 h1,2,3,4,5,6 heading tags코드를 사용한 코드를 우선순위로 검색<br>
-        이걸 접근성(accessibility) 이라 한다 <br>
-        ex)시각장에인의 앱을 접근에도 이런 접근성이 고려된다 <br>
+            <button type="button" class="collapsible"><h2>css</h2></button>
+              <div class="css">
+                <ol>
+                  <li><a href="11.html">css처음 - css의 등장</a></li>
+                  <li><a href="12.html">css의 기본 문법</a></li>
+                  <li><a href="13.html">property 에 대해서</a></li>
+                  <li><a href="14.html">선택자(selecter)의 우선순위</a></li>
+                </ol>
+              </div>
+          </div>
 
-        그러니 코드구성할때 검색앤진을 기준으로 구성해야된다<br>
-        이미지로 글을 사용시 검색못함 (근데 구글은?)<br>
-        앞으로 배움에 있어 이런 검색엔진의 규칙같은걸 잘 고려해야된다? 라는걸 생각해봄
-        </p>
+          <div class="mid1">
+            <h3>html이 중요한 이유</h3>
+              <div class="maintext">
+                검색앤진 기준으로<br>
+              검색할때 h1,2,3,4,5,6 heading tags코드를 사용한 코드를 우선순위로 검색<br>
+              이걸 접근성(accessibility) 이라 한다 <br>
+              ex)시각장에인의 앱을 접근에도 이런 접근성이 고려된다 <br>
 
+              그러니 코드구성할때 검색앤진을 기준으로 구성해야된다<br>
+              이미지로 글을 사용시 검색못함 (근데 구글은?)<br>
+              앞으로 배움에 있어 이런 검색엔진의 규칙같은걸 잘 고려해야된다? 라는걸 생각해봄
+              </div>
 
-  <img src="head.jpg" alt="Girl in a jacket" width="25%" height="25%">
+              <script type="text/javascript" src="leftside_butten.js">
+              </script>
+
+    </body>
+</html>

@@ -15,28 +15,33 @@ h1{
   text-align: center; font-size: 45px;
   padding-bottom: 20px; margin-top:0px;
   margin-bottom: 0px;
-
 }
+h2 {
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h3{
+  font-size:30px;
+}
+
+ol {
+  margin:0px;
+  padding-top: 10px;
+}
+
 .grid{
   display: grid;
   grid-template-columns: 200px 1fr;
 }
-ol {
 
-
-  margin:0px;
-  padding-top: 10px;
-
-}
-.bottombg {
-display: block;
-margin-left: auto;
-margin-right: auto;
-}
 .mid1{
 padding-left:50px;
 border-left:3px solid black;
+height:460px;
 }
+
 .maintext{
   margin-top: 45px;
 }
@@ -73,16 +78,4 @@ border-left:3px solid black;
   overflow: hidden;
   background-color: #f1f1f1;
   padding-right: 0px;
-}
-
-h2 {
-  font-size: 25px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.leftside {
- width:200px;
-}
-h3{
-  font-size:30px;
 }
